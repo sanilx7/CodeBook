@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int binarySearch(int arr[], int size, int element){
+    int low = 0, high = size-1;
+while(low<=high){
+    int mid = (low+high)/2;
+    if(arr[mid]==element){                 //at mid
+        return mid;
+    }
+    else if(arr[mid]<element){             //upper half
+        low=mid+1;
+    }
+    else{                                 //lower half
+        high=mid-1;
+    }                                     //ye teen process bar bar hoti rhegi
+}
+return -1;
+}
+
+int main()
+{
+    int arr[] = {1,2,3,4,5,6,7};
+    int size = sizeof(arr)/sizeof(int);
+    int element;
+    cin>>element;
+    cout<<"The element is at index "<<binarySearch(arr,size,element)<<endl;
+    return 0;
+}
