@@ -15,13 +15,11 @@ public:
 	        return -1;
 	    
 	    int i;
-	    int k;
 	    int max1 = arr[0];
 	    
 	    for(i=1;i<n;i++){
 	        if(max1<=arr[i]){
 	        max1=arr[i];
-	        k = i;
 	       }
 	    }
 	        
