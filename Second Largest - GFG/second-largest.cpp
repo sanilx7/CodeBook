@@ -26,7 +26,7 @@ public:
 	    int max2 = -1;
 	    
 	    for(i=0;i<n;i++){
-	        if(arr[i]!=max1){
+	        if(arr[i]!=max1){                        //this is how you skip an element from an array
 	            max2 = max(arr[i],max2);
 	        }
 	    }
